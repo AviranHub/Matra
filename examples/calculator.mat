@@ -1,0 +1,20 @@
+fn calculate(left: Float64, operation: String, right: Float64) -> Float64 {
+    if operation == "+" {
+        return left + right
+    }
+    if operation == "-" {
+        return left - right
+    }
+    if operation == "*" {
+        return left * right
+    }
+    if operation == "/" {
+        return left / right
+    }
+    return 0.0
+}
+
+print(calculate(8.0, "+", 2.0))
+print(calculate(8.0, "-", 2.0))
+print(calculate(8.0, "*", 2.0))
+print(calculate(8.0, "/", 2.0))
